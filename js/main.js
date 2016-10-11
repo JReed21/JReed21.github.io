@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $(window).scroll(function (e) {
         var fromTopWindow = $(this).scrollTop();
-        if(fromTopWindow <= 800) {
+        if(fromTopWindow <= 800 && fromTopWindow >= 0) {
             $(".scrolled").css('display','block');
             $(".scrolled").css('opacity', (480 /fromTopWindow));
         }
